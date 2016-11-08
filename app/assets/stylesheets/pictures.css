@@ -2,3 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+body, div, h1, h2, h3, h4, h5, p, ul, ol, li, img, form {
+  margin: 0; padding: 0; border: 0;
+}
