@@ -2,7 +2,7 @@
 
 <h1>Listing pictures</h1>
 
-<table>
+<table class="gallery" data-gallery="hongkong">
   <thead>
     <tr>
       <th>Title</th>
@@ -13,12 +13,12 @@
 
   <tbody>
     <% @pictures.each do |picture| %>
-      <tr>
+      <tr class="thumbs">
         <td><%= picture.title %></td>
-        <td><%= image_tag picture.url %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to "", picture.url, title: picture.title,
+            style: "background-image:url('#{picture.url}'" %>
+        </td>
       </tr>
     <% end %>
   </tbody>
