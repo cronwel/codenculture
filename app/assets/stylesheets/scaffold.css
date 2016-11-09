@@ -1,36 +1,49 @@
 body, div, h1, h2, h3, h4, h5, p, ul, ol, li, img, form {
-  margin: 0; padding: 0; border: 0;
+  margin: 0px; padding: 0; border: 0px;
+}
+
+.title {
+  font-size: 3em;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: black;
+  color: #38FF33;
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Oxygen Mono', monospace;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+  text-align: center;
 }
 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+  text-align: center;
 }
 
 a {
-  color: #000;
+  color: #38FF33;
 }
 
 a:visited {
-  color: #666;
+  color: #F4FF33;
 }
 
 a:hover {
   color: #fff;
   background-color: #000;
+}
+
+.linkcolors {
+  text-decoration: none;
+  color: #F4FF33;
 }
 
 th {
@@ -46,6 +59,10 @@ td {
 div.field,
 div.actions {
   margin-bottom: 10px;
+}
+
+.PictureLinks {
+  color: #38FF33;
 }
 
 #notice {
@@ -85,4 +102,8 @@ div.actions {
 
 label {
   display: block;
+}
+
+.gallery{
+  width: 100%;
 }
