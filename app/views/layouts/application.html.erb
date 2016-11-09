@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Photogur</title>
+    <title>Code//Cult</title>
     <%= csrf_meta_tags %>
 <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,11 +11,11 @@
   <body>
     <div id="nav">
       <% if current_user %>
-        <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
-        <%= link_to "Logout", :logout, method: :post %>
+        <%= link_to "Edit Profile", edit_user_path(current_user.id), :style => 'text-decoration: none;' %>
+        <%= link_to "Logout", :logout, method: :post, :style => 'text-decoration: none;' %>
       <% else %>
-        <%= link_to "Register", new_user_path %> |
-        <%= link_to "Login", :login %>
+        <%= link_to "Register", new_user_path, :style => 'text-decoration: none;'%> |
+        <%= link_to "Login", :login, :style => 'text-decoration: none;' %>
       <% end %>
     </div>
     <div>
@@ -24,7 +24,10 @@
     </div>
     <%= yield %>
 
-
+<!-- Should we use a footer?  -->
+  <footer>
+  Copyright 2016
+  </footer>
 
   </body>
 </html>
