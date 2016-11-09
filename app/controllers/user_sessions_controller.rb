@@ -16,6 +16,7 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
+
     redirect_to(:users, notice: 'Bye Felicia')
   end
 end
