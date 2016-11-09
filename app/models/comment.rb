@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
 
-  belongs_to :pictures
+  belongs_to :picture
 end
